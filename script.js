@@ -3,7 +3,7 @@ function FormData(form) {
 
     const name_pattern = /^[А-ЯІЇЄҐ][а-яіїєґ]+\s[А-ЯІЇЄҐ]\.[А-ЯІЇЄҐ]\.$/;
     const group_pattern = /^[А-ЯІЇЄҐ]{2}-\d{2}$/;
-    const phone_pattern = /^\(\d{3}\)-\d{3}-\d{2}-\d{2}$/;
+    const phone_pattern = /^\(\d{3}\)-\d{3}-\d{2}-\d{3}$/;
     const id_card_pattern = /^[А-ЯІЇЄҐ]{2}\s№\d{6}$/;
     const faculty_pattern = /^[А-ЯІЇЄҐ]+$/;
     let allValid = true; 
