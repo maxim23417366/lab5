@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ІО-34 Непорожній Лаб5</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-block">
+            <h2>Форма (Завдання 1)</h2>
+            <form action="#" method="get">
+                
+                <div class="form-row" id="row-name">
+                    <label for="name-input">1. ПІБ:</label>
+                    <input type="text" name="name" id="name-input" placeholder="Прізвище І.П.">
+                </div>
+
+                <div class="form-row" id="row-group">
+                    <label for="group-input">2. Група:</label>
+                    <input type="text" name="group" id="group-input" placeholder="ТТ-ЧЧ">
+                </div>
+
+                <div class="form-row" id="row-phone">
+                    <label for="phone-input">3. Телефон:</label>
+                    <input type="text" name="phone" id="phone-input" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧЧЧ">
+                </div>
+
+                <div class="form-row" id="row-id_card">
+                    <label for="id_card-input">4. ID-card:</label>
+                    <input type="text" name="id_card" id="id_card-input" placeholder="ТТ №ЧЧЧЧЧЧ">
+                </div>
+
+                <div class="form-row" id="row-faculty">
+                    <label for="faculty-input">5. Факультет:</label>
+                    <input type="text" name="faculty" id="faculty-input" placeholder="ТТТТ">
+                </div>
+
+                <button type="submit" onclick="return FormData(this.form)">Підвердити</button>
+            </form>
+        </div>
+
+        <div class="output-block" id="outputContainer">
+            <h2>Введені дані</h2>
+            <div id="outputData"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="table-wrapper">
+        <h1>Завдання 2: Таблиця</h1>
+        
+        <div>
+            <label for="colorPicker">Оберіть колір:</label>
+            <input type="color" id="colorPicker" value="#0dd3da">
+            
+            <button id="clearTableButton">Очистити</button>
+            </div>
+
+        <table id="table"></table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
